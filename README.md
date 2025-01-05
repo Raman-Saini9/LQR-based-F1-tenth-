@@ -168,7 +168,8 @@ The parameters listed below can be modified in the ```params.yaml``` file.
 ```joy_angle_axis```: The index of the joystick axis used to control the angle of the car.  To determine this parameter it may be useful to print out the joystick messages with ```rostopic echo /joy```.
 
 ```joy_button_idx```: The index of the joystick button used to turn on/off joystick driving.
-#### Using LQR as global controller
+
+# Using LQR as global controller
 - Add ```Silverstone_map.png``` and ```Silverstone_map.yaml``` to the path ```f1tenth-simulator\f1tenth_simulator\maps```
 - Update map in ```simulator.launch``` to "Silverstone_map.yaml"
   ```<arg name="map" default="$(find f1tenth_simulator)/maps/Silverstone_map.yaml"/>```
