@@ -170,7 +170,7 @@ The parameters listed below can be modified in the ```params.yaml``` file.
 ```joy_button_idx```: The index of the joystick button used to turn on/off joystick driving.
 #### Using LQR as global controller
 - Add ```Silverstone_map.png``` and ```Silverstone_map.yaml``` to the path ```f1tenth-simulator\f1tenth_simulator\maps```
-- Update map in ```simulator.launch``` at ```f1tenth-simulator\f1tenth_simulator\launch``` to "Silverstone_map.yaml"
+- Update map in ```simulator.launch``` to "Silverstone_map.yaml"
   ```<arg name="map" default="$(find f1tenth_simulator)/maps/Silverstone_map.yaml"/>```
 - Add files ```LQRController.py``` and ```Silverstone_centerline.csv``` in ```f1tenth-course-labs``` package at path ```catkin_ws/src/f1tenth-course/f1tenth-course-labs/race/src```.
 - In terminal make LQRController.py executable with command-
